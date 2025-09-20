@@ -1,9 +1,21 @@
 {
   "name": "@pdfi/core",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
   "dependencies": {
-    "@pdfi/embedpdf": "workspace:*",
-    "@freevue/utils": "workspace:*"
+    "@freevue/utils": "workspace:*",
+    "@pdfi/embedpdf": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0"
   }
 }
