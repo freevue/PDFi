@@ -1,6 +1,10 @@
 import EmbedPDF from '@pdfi/embedpdf'
 
-type Props = {}
+type Options = {}
+type Props = {
+  element: HTMLElement
+  options: Options
+}
 
 class PDFi extends EmbedPDF {
   constructor(props: Props) {
