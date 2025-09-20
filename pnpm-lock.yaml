@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@fxts/core':
+        specifier: ^1.15.0
+        version: 1.15.0
     devDependencies:
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^5.2.2
@@ -20,6 +24,15 @@ importers:
       '@freevue/utils':
         specifier: workspace:*
         version: link:../../packages/utils
+      '@pdfi/embedpdf':
+        specifier: workspace:*
+        version: link:../../packages/embedpdf
+
+  packages/embedpdf:
+    dependencies:
+      '@embedpdf/pdfium':
+        specifier: ^1.2.1
+        version: 1.2.1
 
   packages/utils:
     dependencies:
@@ -216,6 +229,9 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+
+  '@embedpdf/pdfium@1.2.1':
+    resolution: {integrity: sha512-QWf1jg7EqUlku2q6KYhlXCNfk5IAykFerPuzKJepHTeAEaRcAfu84fJgEsoUTCK4D6dfzVNp2Iuxw6Kv7MpSeg==}
 
   '@emnapi/core@1.4.5':
     resolution: {integrity: sha512-XsLw1dEOpkSX/WucdqUhPWP7hDxSvZiY+fsUC14h+FtQ2Ifni4znbBt8punRX+Uj2JG/uDb8nEHVKvrVlvdZ5Q==}
@@ -1584,6 +1600,8 @@ snapshots:
       '@babel/helper-validator-identifier': 7.27.1
 
   '@bcoe/v8-coverage@0.2.3': {}
+
+  '@embedpdf/pdfium@1.2.1': {}
 
   '@emnapi/core@1.4.5':
     dependencies:

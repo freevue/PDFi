@@ -1,8 +1,9 @@
 {
-  "name": "@freevue/pdfi",
+  "name": "@pdfi/core",
   "version": "0.0.0",
   "description": "",
   "dependencies": {
+    "@pdfi/embedpdf": "workspace:*",
     "@freevue/utils": "workspace:*"
   }
 }
