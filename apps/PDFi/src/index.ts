@@ -1,3 +1,15 @@
-import { path } from '@freevue/utils'
+import EmbedPDF from '@pdfi/embedpdf'
 
-console.log(path)
+type Props = {}
+
+class PDFi extends EmbedPDF {
+  constructor(props: Props) {
+    super()
+  }
+
+  async init() {
+    await super.initEmbedPDF()
+  }
+}
+
+export default PDFi
